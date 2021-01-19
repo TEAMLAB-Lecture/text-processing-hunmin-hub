@@ -53,17 +53,11 @@ def no_vowels(input_string):
             no_vowel_string (string): 모든 모음 (a, e, i, o, u)를 제거시킨 스트링
             ex - "Ths s n xmpl."
 
-        Examples:
-            >>> import text_processing as tp
-            >>> input_string1 = "This is an example."
-            >>> tp.no_vowels(input_string1)
-            "Ths s n xmpl."
-            >>> input_string2 = "We love Python!"
-            >>> tp.no_vowels(input_string2)
-            "W lv Pythn!"
     """
-    target_list=["a","e","i","o","u","A","E","I","O","U"]
-    for target in target_list :
-        input_string=input_string.replace(target,"")
-    no_vowel_string = input_string
+    no_vowel_string = ""
+    target=['a','e','i','o','u','A','E','I','O','U']
+    for word in input_string:
+        if word not in target :
+            no_vowel_string+=word
+
     return no_vowel_string
