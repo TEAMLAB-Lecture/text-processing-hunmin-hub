@@ -62,8 +62,8 @@ def no_vowels(input_string):
             >>> tp.no_vowels(input_string2)
             "W lv Pythn!"
     """
-    target=['a','e','i','o','u','A','E','I','O','U']
     no_vowel_string = ""
+    target=['a','e','i','o','u','A','E','I','O','U']
     for word in input_string:
         if word not in target :
             no_vowel_string+=word
